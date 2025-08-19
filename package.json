@@ -1,0 +1,19 @@
+{
+  "name": "provider-connection-pool",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node ./src/index.ts"
+  },
+  "dependencies": {
+    "add": "^2.0.6",
+    "dotenv": "^17.2.1",
+    "ethers": "^6.15.0",
+    "ts-node": "^10.9.2",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  }
+}
