@@ -9,5 +9,7 @@ RUN yarn install
 
 COPY src ./src
 COPY tsconfig.json ./
+COPY netstat.sh ./netstat.sh
+RUN chmod +x ./netstat.sh 
 
 ENTRYPOINT ["yarn","start"]

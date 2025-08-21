@@ -7,12 +7,12 @@ async function main() {
   const url = process.env.PROVIDER_URL;
   if (!url) throw new Error("process.env.PROVIDER_URL Required");
 
-  let provider: ethers.WebSocketProvider | ethers.JsonRpcProvider;
+  let provider: ethers.WebSocketProvider | ethers.JsonRpcProvider ;
 
   if (url.startsWith("ws://") || url.startsWith("wss://")) {
     provider = new ethers.WebSocketProvider(url);
   } else if (url.startsWith("http://") || url.startsWith("https://")) {
-    provider = new ethers.JsonRpcProvider(url);
+    provider = new ethers.JsonRpcProvider(url)
   } else {
     throw new Error("Invaild provider url format");
   }
